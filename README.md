@@ -13,14 +13,14 @@ This application demonstrates three different approaches to handling HTTP reques
 
 ## Technology Stack
 
-- Java 21
-- Spring Boot 3.5.7
-- Gradle 8.9
+- Java 25
+- Spring Boot 4.1.1
+- Gradle 9.8.1
 - Spring Web
 
 ## Prerequisites
 
-- Java 21 or higher
+- JDK 25 (configured via Gradle Java toolchain)
 - Gradle (wrapper included)
 
 ## Getting Started
@@ -38,6 +38,11 @@ This application demonstrates three different approaches to handling HTTP reques
 ```
 
 The application will start on `http://localhost:8080`
+
+## Continuous Integration
+
+GitHub Actions (`.github/workflows/gradle.yml`) builds and tests the project with Temurin JDK 25 on every push and pull
+request to `master`, and submits the dependency graph for Dependabot alerts.
 
 ## API Endpoints
 
